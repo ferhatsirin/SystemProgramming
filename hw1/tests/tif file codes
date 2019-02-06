@@ -1,0 +1,7 @@
+convert test.tif -depth 32 -type grayscale test32.tif // to change bits per pixels
+ 
+convert test16.tif -define tiff:endian=msb msb16.tif // to change byte order
+ 
+convert test16.tif -define quantum:polarity=min-is-white white.tif // to change photometric interperation
+
+
